@@ -15,6 +15,14 @@
   -->
 
 <resources>
+  <dimen name="quick_action_icon_size">24dp</dimen>
+  <dimen name="quick_action_arrow_width">30dp</dimen>
+  <dimen name="quick_action_arrow_height">20dp</dimen>
+  <dimen name="quick_action_corner">4dp</dimen>
+  <dimen name="quick_action_shadow_size">1dp</dimen>
+  <dimen name="quick_action_separator_width">1dp</dimen>
+  <color name="quick_action_shadow_color">#64000000</color>
+
   <public name="quick_action_lib" type="string" />
 
   <public name="define_QuickAction" type="string"/>
@@ -28,4 +36,12 @@
   <public name="library_QuickAction_isOpenSource" type="string"/>
   <public name="library_QuickAction_repositoryLink" type="string"/>
   <public name="library_QuickAction_classPath" type="string"/>
+
+  <public name="quick_action_icon_size" type="dimen" />
+  <public name="quick_action_arrow_width" type="dimen" />
+  <public name="quick_action_arrow_height" type="dimen" />
+  <public name="quick_action_corner" type="dimen" />
+  <public name="quick_action_shadow_size" type="dimen" />
+  <public name="quick_action_separator_width" type="dimen" />
+  <public name="quick_action_shadow_color" type="color" />
 </resources>

@@ -69,19 +69,46 @@ You can get more information at his blog http://www.londatiga.net/it/how-to-crea
 
 My QuickAction have some additional feature more than original
 
-### Set Popup's Color & Text Color
+### Style
 
+#### Background Color
 ```java
   //Popup color
   quickAction.setColorRes(R.color.pink) //set by Color Resource
   quickAction.setColor(Color.WHITE) // or by Color class
+```
 
+#### Text Color
+```java
   //Text color
   quickAction.setTextColorRes(R.color.red)
   quickAction.setTextColor(Color.Black)
 ```
-
 NOTE! setTextColor apply only ActionItem that added afterward.
+
+#### Divider
+Since 2.4
+Control divider visibility and color by [milap tank](https://github.com/milaptank)
+
+```java
+  quickAction.setEnabledDivider(true);
+  quickAction.setDividerColor(Color.WHITE);
+```
+By default, Divider is `enable` for Horizontal and `disable` of Vertical
+
+#### Override Resouce
+Since 2.4
+android Dimen and Color resource of QuickAction marked as public, So you can override it on resource file in your project 
+
+```xml
+  <dimen name="quick_action_icon_size">@dimen/menu_icon_size</dimen>
+  <dimen name="quick_action_arrow_width">40dp</dimen>
+  <dimen name="quick_action_arrow_height">40dp</dimen>
+  <dimen name="quick_action_corner">@dimen/card_corner</dimen>
+  <dimen name="quick_action_shadow_size">@dimen/card_corner</dimen>
+  <dimen name="quick_action_separator_width">@dimen/list_separator_size</dimen>
+  <color name="quick_action_shadow_color">@color/primary_color_dark</color>
+```
 
 ### Quick Intent Action
 
